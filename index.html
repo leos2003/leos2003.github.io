@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rodriguez Rentcar - Alquiler de Vehículos</title>    
+        <link rel="icon" href="https://rodriguezautoventa.com/assets/images/logo.jpg?1" type="image/png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+             Rodriguez Rentcar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enlaces.html">Enlaces de Interés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Botón de modo oscuro -->
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                🌓
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h1 class="text-center">Bienvenidos a Rodriguez Rentcar</h1>
+        <p class="alert alert-info">Si de alquilar un vehiculo se trata Rodriguez Rentcar es tu mejor opcion!!</p>
+
+        <div class="mb-4">
+            <h2>Video sobre Alquiler de Carros</h2>
+            <iframe width="100%" height="550" src="https://www.youtube.com/embed/Fc2JaAaqIps" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="servicios" class="row g-4">
+            <div class="col-md-6">
+                <div class="card hover-effect">
+                    <img src="https://back.suzuki.com.do/wp-content/uploads/2021/05/suzuki-swift-sport-10-1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Carros Economicos</h5>
+                        <p class="card-text">Perfectos para moverte por la ciudad con comodidad y ahorro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card hover-effect">
+                    <img src="https://live.dealer-asset.co/nz1/siteassets/RTR%20resized.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Carros Deportivos</h5>
+                        <p class="card-text">Viaja con estilo y comodidad en nuestros vehículos premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="informacion" class="section-background">
+            <div class="container">
+                <h2 class="text-center mb-4">Información sobre Alquiler de Carros</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="icon-feature">
+                        </div>
+                        <h3>Variedad de Vehículos</h3>
+                        <p>Ofrecemos una amplia gama de vehículos para satisfacer todas tus necesidades de transporte, desde compactos económicos hasta SUVs de lujo.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="icon-feature">
+                        </div>
+                        <h3>Seguridad Garantizada</h3>
+                        <p>Todos nuestros vehículos son revisados meticulosamente y cuentan con los más altos estándares de seguridad y mantenimiento.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="icon-feature">
+                        </div>
+                        <h3>Precios Competitivos</h3>
+                        <p>Ofrecemos tarifas accesibles y transparentes sin cargos ocultos. Descubre promociones y paquetes especiales.</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h3>¿Por qué Alquilar con Nosotros?</h3>
+                        <p>En Rodriguez Rentcar entendemos que cada viaje es único. Ya sea que necesites un vehículo para un viaje de negocios, vacaciones familiares o simplemente moverte por la ciudad, tenemos la solución perfecta para ti.</p>
+                        
+                        <h4>Nuestros Servicios Incluyen:</h4>
+                        <ul>
+                            <li>Alquiler sin límite de kilometraje</li>
+                            <li>Seguro completo incluido</li>
+                            <li>Asistencia en carretera 24/7</li>
+                            <li>Vehículos nuevos y bien mantenidos</li>
+                            <li>Proceso de reserva rápido y sencillo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="mt-5">Galería de Vehículos</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://back.suzuki.com.do/wp-content/uploads/2021/05/suzuki-swift-sport-15.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://back.suzuki.com.do/wp-content/uploads/2022/10/Suzuki-S-Cross-2023-Suzuki-S-Cross-2023-Cosmic-Black-Pearl-Metallic_-Custom.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://back.suzuki.com.do/wp-content/uploads/2021/05/suzuki-jimny-verde-limon.png" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+<!-- Sección para alquilar tu propio vehículo -->
+<section id="alquila-tu-vehiculo" class="section-background my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">¿Tienes un vehículo? ¡Alquílalo con nosotros!</h2>
+                <p>En Rodriguez Rentcar te ofrecemos la oportunidad de maximizar el rendimiento de tu vehículo convirtiéndolo en una fuente de ingresos adicionales.</p>
+                <h4>Beneficios de alquilar tu vehículo con nosotros:</h4>
+                <ul>
+                    <li>Gestión completa del proceso de alquiler</li>
+                    <li>Verificación exhaustiva de los arrendatarios</li>
+                    <li>Seguro de cobertura total incluido</li>
+                    <li>Mantenimiento preventivo gratuito</li>
+                    <li>Pagos puntuales y transparentes</li>
+                    <li>Flexibilidad para establecer la disponibilidad</li>
+                </ul>
+                <div class="alert alert-success">
+                    <strong>¡Gana dinero extra!</strong> Nuestros propietarios ganan en promedio entre $300 y $700 USD mensuales dependiendo del tipo de vehículo.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Registra tu vehículo</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="registroVehiculoForm">
+                            <div class="mb-3">
+                                <label for="nombrePropietario" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombrePropietario" placeholder="Ingresa tu nombre completo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailPropietario" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="emailPropietario" placeholder="Ingresa tu correo electrónico" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefonoPropietario" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefonoPropietario" placeholder="Ej: (829) 123-4567" required>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="marcaVehiculo" class="form-label">Marca</label>
+                                    <input type="text" class="form-control" id="marcaVehiculo" placeholder="Ej: Toyota" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="modeloVehiculo" class="form-label">Modelo</label>
+                                    <input type="text" class="form-control" id="modeloVehiculo" placeholder="Ej: Corolla" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="yearVehiculo" class="form-label">Año</label>
+                                    <input type="number" class="form-control" id="yearVehiculo" min="2000" max="2025" placeholder="Ej: 2023" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="tipoVehiculo" class="form-label">Tipo de vehículo</label>
+                                    <select class="form-select" id="tipoVehiculo" required>
+                                        <option value="" selected disabled>Seleccionar...</option>
+                                        <option value="sedan">Sedán</option>
+                                        <option value="suv">SUV</option>
+                                        <option value="pickup">Pickup</option>
+                                        <option value="deportivo">Deportivo</option>
+                                        <option value="compacto">Compacto</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fotoVehiculo" class="form-label">Foto del vehículo</label>
+                                <input type="file" class="form-control" id="fotoVehiculo" accept="image/*">
+                                <div class="form-text">Sube una foto clara de tu vehículo (opcional)</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="condicionesVehiculo" class="form-label">Condiciones especiales</label>
+                                <textarea class="form-control" id="condicionesVehiculo" rows="3" placeholder="Indica cualquier condición especial o información adicional sobre tu vehículo"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terminosCondiciones" required>
+                                <label class="form-check-label" for="terminosCondiciones">Acepto los términos y condiciones del programa</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar solicitud</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const registroVehiculoForm = document.getElementById('registroVehiculoForm');
+        
+        if (registroVehiculoForm) {
+            registroVehiculoForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+
+                alert('¡Gracias por registrar tu vehículo! Nos pondremos en contacto contigo pronto para revisar los detalles.');
+                
+                // Resetear el formulario
+                registroVehiculoForm.reset();
+            });
+        }
+    });
+</script>
+<h2 id="contacto" class="mt-5">Contáctanos</h2>
+<form>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+    </div>
+    <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+    </div>
+    <a href="mailto:info@rodriguezrentcar.com?subject=Consulta%20desde%20Rodriguez%20Rentcar" class="btn btn-primary">Enviar Correo</a>
+</form>
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <button onclick="MostrarAlerta()" class="btn btn-warning w-100">
+            Mostrar Alerta
+        </button>
+    </div>
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Rodriguez Rentcar</h5>
+                <p>Tu mejor opción para alquiler de vehículos</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Contáctanos</h5>
+                <p><i class="bi bi-envelope"></i> info@rodriguezrentcar.com</p>
+                <p><i class="bi bi-telephone"></i> (829) 776-0830</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Síguenos</h5>
+                <div class="social-links">
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3 bg-light">
+        <p>&copy; 2025 Rodriguez Rentcar. Todos los derechos reservados.</p>
+        <button type="button" class="btn btn-sm btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#politicasModal">
+            Políticas de Privacidad
+        </button>
+    </div>
+</footer>
+    <!-- Modal Políticas de Privacidad -->
+    <div class="modal fade" id="politicasModal" tabindex="-1" aria-labelledby="politicasModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="politicasModalLabel">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>1. Información que Recopilamos</h4>
+                    <p>En Rodriguez Rentcar, recopilamos información personal como nombre, dirección, número de teléfono, correo electrónico, información de licencia de conducir e información de pago cuando reserva un vehículo con nosotros.</p>
+                    
+                    <h4>2. Uso de su Información</h4>
+                    <p>Utilizamos su información para procesar sus reservas, proporcionar servicios de alquiler de vehículos, enviar confirmaciones, comunicarnos con usted sobre su alquiler y mejorar nuestros servicios.</p>
+                    
+                    <h4>3. Protección de Datos</h4>
+                    <p>Implementamos medidas de seguridad diseñadas para proteger su información personal contra acceso, alteración, divulgación o destrucción no autorizados.</p>
+                    
+                    <h4>4. Compartir Información</h4>
+                    <p>Podemos compartir su información con proveedores de servicios que nos ayudan a proporcionar servicios, como procesadores de pagos. No vendemos su información personal a terceros.</p>
+                    
+                    <h4>5. Sus Derechos</h4>
+                    <p>Usted tiene derecho a acceder, corregir o eliminar sus datos personales que poseemos. Para ejercer estos derechos, contáctenos a través de info@rodriguezrentcar.com.</p>
+                    
+                    <h4>6. Cookies</h4>
+                    <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede configurar su navegador para rechazar todas las cookies o para indicar cuándo se envía una cookie.</p>
+                    
+                    <h4>7. Cambios a esta Política</h4>
+                    <p>Podemos actualizar nuestra política de privacidad periódicamente. Le notificaremos cualquier cambio publicando la nueva política de privacidad en esta página.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Función para cambiar modo oscuro
+        function toggleDarkMode() {
+            const isDarkMode = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        // Comprobar preferencia de modo oscuro al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+            if (savedDarkMode) {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

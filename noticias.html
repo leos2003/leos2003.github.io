@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noticias sobre alquiler de vehículos, novedades del sector automotriz y consejos para conductores de Rodriguez Rentcar">
+    <meta name="keywords" content="alquiler de carros, rent a car, noticias, vehículos eléctricos, conducción, turismo">
+    <title>Noticias - Rodriguez Rentcar</title>
+    <link rel="icon" href="https://rodriguezautoventa.com/assets/images/logo.jpg?1" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Rodriguez Rentcar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces de Interés</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌓</div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Noticias y Artículos</h1>
+        <p class="lead text-center mb-5">Mantente informado sobre las últimas tendencias en el alquiler de vehículos y el sector automotriz</p>
+
+        <div class="row mb-5">
+            <div class="col-lg-8">
+                <article class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">El Auge de los Vehículos Eléctricos en el Alquiler</h2>
+                        <p class="text-muted">Publicado el 5 de marzo, 2025 | Por Juan Pérez</p>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/2025-tesla-model-s-1-672d42e172407.jpg?crop=0.465xw:0.466xh;0.285xw,0.361xh&resize=1200:*" alt="Vehículos eléctricos" class="img-fluid rounded mb-3">
+                        <p class="card-text">La demanda de vehículos eléctricos para alquiler ha experimentado un crecimiento exponencial en el último año. Las empresas de alquiler están ampliando rápidamente sus flotas con modelos eléctricos para satisfacer esta creciente demanda.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#articuloCompleto1">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Consejos para un Viaje por Carretera Seguro</h2>
+                        <p class="text-muted">Publicado el 28 de febrero, 2025 | Por María Gómez</p>
+                        <img src="https://pbs.twimg.com/media/DjNEcWOXgAEwvJx.jpg" alt="Viaje por carretera" class="img-fluid rounded mb-3">
+                        <p class="card-text">Planificar un viaje por carretera puede ser emocionante, pero la seguridad debe ser siempre la prioridad. Aquí te ofrecemos algunos consejos fundamentales.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#articuloCompleto2">Leer más</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0"><i class="bi bi-star"></i> Artículos Destacados</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-car-front me-2 text-primary"></i>
+                                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#destacado1">Los mejores vehículos para viajes familiares</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-fuel-pump me-2 text-primary"></i>
+                                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#destacado2">Cómo ahorrar combustible en tus viajes</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-map me-2 text-primary"></i>
+                                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#destacado3">Rutas turísticas imperdibles en República Dominicana</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-credit-card me-2 text-primary"></i>
+                                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#destacado4">Guía para alquilar un vehículo sin sorpresas</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-tree me-2 text-primary"></i>
+                                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#destacado5">Turismo sostenible: consejos para viajeros responsables</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="mb-0"><i class="bi bi-calendar-event"></i> Próximos Eventos</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <h5>Feria de Vehículos 2025</h5>
+                            <p class="text-muted">20-22 de abril, 2025</p>
+                            <p>Visítanos en nuestro stand y conoce nuestras nuevas adiciones a la flota.</p>
+                        </div>
+                        <div>
+                            <h5>Taller: Conducción Eficiente</h5>
+                            <p class="text-muted">15 de mayo, 2025</p>
+                            <p>Aprende técnicas para optimizar el consumo de combustible y reducir emisiones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-header bg-warning text-dark">
+                        <h4 class="mb-0"><i class="bi bi-bell"></i> Suscríbete a nuestro boletín</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Recibe las últimas noticias y ofertas especiales directamente en tu correo.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-dark text-center py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Rodriguez Rentcar</h5>
+                    <p>Tu mejor opción para alquiler de vehículos</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contáctanos</h5>
+                    <p><a href="mailto:info@rodriguezrentcar.com" class="text-dark">info@rodriguezrentcar.com</a></p>
+                    <p>(829) 776-0830</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p>&copy; 2025 Rodriguez Rentcar. Todos los derechos reservados.</p>
+            <button type="button" class="btn btn-sm btn-outline-dark mt-2" data-bs-toggle="modal" data-bs-target="#politicasModal">Políticas de Privacidad</button>
+        </div>
+    </footer>
+
+    <!-- Modales para artículos principales -->
+    <div class="modal fade" id="articuloCompleto1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">El Auge de los Vehículos Eléctricos en el Alquiler</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/2025-tesla-model-s-1-672d42e172407.jpg?crop=0.465xw:0.466xh;0.285xw,0.361xh&resize=1200:*" alt="Vehículos eléctricos" class="img-fluid rounded mb-3">
+                    <p class="text-muted">Publicado el 5 de marzo, 2025 | Por Juan Pérez</p>
+                    <p>La demanda de vehículos eléctricos para alquiler ha experimentado un crecimiento exponencial en el último año. Las empresas de alquiler están ampliando rápidamente sus flotas con modelos eléctricos para satisfacer esta creciente demanda.</p>
+                    <p>Según los últimos estudios, más del 30% de los clientes ahora prefieren opciones ecológicas cuando alquilan un vehículo. Esta tendencia no solo refleja una mayor conciencia ambiental sino también consideraciones prácticas como el ahorro en combustible y los incentivos gubernamentales.</p>
+                    <p>En Rodriguez Rentcar estamos comprometidos con esta visión sostenible y hemos aumentado nuestra flota de vehículos eléctricos en un 40% durante el último trimestre.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="articuloCompleto2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Consejos para un Viaje por Carretera Seguro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://pbs.twimg.com/media/DjNEcWOXgAEwvJx.jpg" alt="Viaje por carretera" class="img-fluid rounded mb-3">
+                    <p class="text-muted">Publicado el 28 de febrero, 2025 | Por María Gómez</p>
+                    <p>Planificar un viaje por carretera puede ser emocionante, pero la seguridad debe ser siempre la prioridad. Antes de partir, revisa neumáticos, frenos, luces y niveles de fluidos. Planifica tu ruta y considera las condiciones climáticas.</p>
+                    <p>Durante el viaje, mantén una velocidad segura, usa el cinturón de seguridad y evita distracciones. Lleva un kit de emergencia con herramientas, agua y comida por si acaso.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales para artículos destacados -->
+    <div class="modal fade" id="destacado1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Los 10 mejores vehículos para viajes familiares</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Viajar en familia requiere espacio, comodidad y seguridad. Aquí están los mejores vehículos para tus viajes: </p>
+                    <ul>
+                        <li>Toyota Highlander: Espacioso y con tecnología avanzada.</li>
+                        <li>Honda Odyssey: Ideal para familias grandes con asientos versátiles.</li>
+                        <li>Subaru Outback: Perfecto para aventuras al aire libre.</li>
+                        <!-- Más vehículos pueden añadirse -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destacado2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cómo ahorrar combustible en tus viajes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Para ahorrar combustible: mantén una velocidad constante, revisa la presión de los neumáticos regularmente, evita acelerar o frenar bruscamente y reduce el peso innecesario en el vehículo. Estos consejos no solo ahorran dinero, sino que también benefician al medio ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destacado3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rutas turísticas imperdibles en República Dominicana</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descubre estas rutas espectaculares:</p>
+                    <ul>
+                        <li>Carretera de Samaná: Playas y paisajes tropicales.</li>
+                        <li>Ruta a Jarabacoa: Montañas y cascadas.</li>
+                        <li>Camino costero a Punta Cana: Vistas al mar inolvidables.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destacado4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Guía para alquilar un vehículo sin sorpresas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Antes de alquilar, lee el contrato detalladamente, verifica qué incluye el seguro, revisa el vehículo por daños previos y pregunta por cargos adicionales. Esto te evitará sorpresas y costos ocultos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destacado5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Turismo sostenible: consejos para viajeros responsables</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sé un viajero responsable: opta por vehículos eléctricos o híbridos, reduce el uso de plásticos, respeta las comunidades locales y apoya negocios sostenibles. Pequeñas acciones hacen una gran diferencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Políticas de Privacidad -->
+    <div class="modal fade" id="politicasModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>1. Información que Recopilamos</h4>
+                    <p>En Rodriguez Rentcar, recopilamos información personal como nombre, dirección, número de teléfono, correo electrónico, información de licencia de conducir e información de pago cuando reserva un vehículo con nosotros.</p>
+                    <!-- Resto del contenido de políticas -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
